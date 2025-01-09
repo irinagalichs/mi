@@ -1,8 +1,8 @@
 {
-    "name": "symfony/translation-contracts",
+    "name": "symfony/polyfill-php83",
     "type": "library",
-    "description": "Generic abstractions related to translation",
-    "keywords": ["abstractions", "contracts", "decoupling", "interfaces", "interoperability", "standards"],
+    "description": "Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions",
+    "keywords": ["polyfill", "shim", "compatibility", "portable"],
     "homepage": "https://symfony.com",
     "license": "MIT",
     "authors": [
@@ -16,22 +16,18 @@
         }
     ],
     "require": {
-        "php": ">=8.1"
+        "php": ">=7.2"
     },
     "autoload": {
-        "psr-4": { "Symfony\\Contracts\\Translation\\": "" },
-        "exclude-from-classmap": [
-            "/Test/"
-        ]
+        "psr-4": { "Symfony\\Polyfill\\Php83\\": "" },
+        "files": [ "bootstrap.php" ],
+        "classmap": [ "Resources/stubs" ]
     },
     "minimum-stability": "dev",
     "extra": {
-        "branch-alias": {
-            "dev-main": "3.5-dev"
-        },
         "thanks": {
-            "name": "symfony/contracts",
-            "url": "https://github.com/symfony/contracts"
+            "name": "symfony/polyfill",
+            "url": "https://github.com/symfony/polyfill"
         }
     }
 }
