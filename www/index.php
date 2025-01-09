@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -32,7 +32,7 @@
             </div>
             <div class="mb-3">
                 <label for="inputPrice" class="form-label">Цена</label>
-                <input type="" class="form-control" id="inputPrice" name="price" required="true">
+                <input type="number" class="form-control" id="inputPrice" name="price" required="true">
             </div>
             <input id="input30Second" name="30Second" style="display: none;">
             <button type="submit" class="btn btn-primary">Отправить</button>
