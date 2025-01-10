@@ -17,9 +17,9 @@ use AmoCRM\Models\LeadModel;
 
 require 'vendor/autoload.php';
 
-$subdomain = 'irinagalichs'; 
+$subdomain = 'g1rin3'; 
 //Долгосрочный токен
-$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjcwOTAxZDg2NTBmYjA3Zjk4YTNlMGEyMGJhNTkyMmQyNWEzODdkZjhmMTVjNWNiNTIzOGFhYWZiMDM3NzYwYjQ1OTM1NmJlNTI5NjI0ZDJmIn0.eyJhdWQiOiI0NTU3NzFhMy1hMjIwLTRlZTMtYjY2Yy1lMDljYzAwZjgwZGQiLCJqdGkiOiI3MDkwMWQ4NjUwZmIwN2Y5OGEzZTBhMjBiYTU5MjJkMjVhMzg3ZGY4ZjE1YzVjYjUyMzhhYWFmYjAzNzc2MGI0NTkzNTZiZTUyOTYyNGQyZiIsImlhdCI6MTczNjI3OTIwMiwibmJmIjoxNzM2Mjc5MjAyLCJleHAiOjE3MzgzNjgwMDAsInN1YiI6IjExOTQyNjU0IiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjMyMTQ1MDA2LCJiYXNlX2RvbWFpbiI6ImFtb2NybS5ydSIsInZlcnNpb24iOjIsInNjb3BlcyI6WyJjcm0iLCJmaWxlcyIsImZpbGVzX2RlbGV0ZSIsIm5vdGlmaWNhdGlvbnMiLCJwdXNoX25vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjoiOTNiOTM3YzEtOWI4OS00MGUxLTk0MWItY2JjODk4MjRiM2RjIiwiYXBpX2RvbWFpbiI6ImFwaS1iLmFtb2NybS5ydSJ9.nELT97OIzfdtp2Nh9VSji28i4d8Z7IAOeDn5zBScV93nwALyGX8Tbp85hrGvmxrXg5Vwo4H18jkIi_Mlow_FU6r-mzxPqopX7ROwwSA3nKzJVzJSMAbT_qRZziNOZ6kZZp03xQhcXi5C7jSKUUuVSViL5cc2R-n6WAfosDMeHfGkDe226rmfLNKY8r4xQINoYC807GmWCb7Ya2r27sC_9FuZNlflAw2QwMscagbNmi40cy67Z24uuDhINyYb4ME3zQmqyVyEetW3n78FDhgDrBJfCa0AmQx9Nt-hp9dPe-c3da8WYNHCGRQPKNOnS-b7eAybi7tpt3rdEYFUV5arvw';
+$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE2Mjc4YzEzOTg1MjlmNTk2NTg4YjAwNTgzMDg5OTRhYzdmODk3NWNiNDlkY2UyZWY1YmU2YjRjMTRmZDRlMTMxZWJkZDE1OTk4MWNkMzg0In0.eyJhdWQiOiI1NTkxMmJiNS0wNDdiLTQ1OWUtODdhMS05MGI0MzgzNWViOTkiLCJqdGkiOiJhNjI3OGMxMzk4NTI5ZjU5NjU4OGIwMDU4MzA4OTk0YWM3Zjg5NzVjYjQ5ZGNlMmVmNWJlNmI0YzE0ZmQ0ZTEzMWViZGQxNTk5ODFjZDM4NCIsImlhdCI6MTczNjQ3MDk2MCwibmJmIjoxNzM2NDcwOTYwLCJleHAiOjE3MzgzNjgwMDAsInN1YiI6IjExOTY2MDE4IiwiZ3JhbnRfdHlwZSI6IiIsImFjY291bnRfaWQiOjMyMTU5NzM4LCJiYXNlX2RvbWFpbiI6ImFtb2NybS5ydSIsInZlcnNpb24iOjIsInNjb3BlcyI6WyJjcm0iLCJmaWxlcyIsImZpbGVzX2RlbGV0ZSIsIm5vdGlmaWNhdGlvbnMiLCJwdXNoX25vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjoiYTBjZGQ3MzgtMTU2Ny00YzNhLThlMTctMTcyYzc0ODVkZTIyIiwiYXBpX2RvbWFpbiI6ImFwaS1iLmFtb2NybS5ydSJ9.f4Z8mV9RzuYKgJhvr8AfIYNuebUN5wq_1nmDsPuOjZH48Zx5ZtyQ-xcRGpvwPlLeRJO0AygWMMZ3fEzT83bgiMbASwcIsWBvEa2aCwbxaRSAN0BoOijiwC_Eb5e6BbS1-WilvoD1vA12ysH2ONKSDIC_pLrA4mYXgrZwL7Yy1mRZgv53SfdSauXvTUJSgLN_OvmlmgnTTTfDjQk-uAAqlkROjTt60n2s5Rb5JPYKiSd8q_hxUtuUFrF3dqWfw5FcTKOyFlENP3i-ITWlmlavKgl5NnGVXbX5ZQe_3zq0pw9nQGu7cNL8Ea3V8zYLS4htwasAR6ZGGhcXhbP6FfwTkg';
 $apiClient = new AmoCRMApiClient();
 $longLivedAccessToken = new LongLivedAccessToken($accessToken);
 $apiClient->setAccessToken($longLivedAccessToken)
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     )
                                     ->add(
                                         (new TextCustomFieldValuesModel())
-                                            ->setFieldId('671811')
+                                            ->setFieldId('787041')
                                             ->setValues(
                                                 (new TextCustomFieldValueCollection())
                                                     ->add(
